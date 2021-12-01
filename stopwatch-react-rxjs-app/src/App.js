@@ -44,8 +44,12 @@ function App() {
     }
 
     const reset = () => {
-        setTimerOn(true);
-        setTime(0);
+        if(time === 0){
+            setTimerOn(false);
+        }else{
+            setTimerOn(true);
+            setTime(0);
+        }
     }
 
   return (
