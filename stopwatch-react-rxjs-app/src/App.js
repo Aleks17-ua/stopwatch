@@ -44,6 +44,7 @@ function App() {
     }
 
     const reset = () => {
+        setTimerOn(true);
         setTime(0);
     }
 
